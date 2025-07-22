@@ -1,0 +1,5 @@
+PKG-INFO
+*.pt
+*.txt
+*.pyc
+/datasets/lidc
