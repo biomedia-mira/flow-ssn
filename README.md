@@ -8,6 +8,10 @@ Code for the **ICCV 2025** paper:
 >Fabio De Sousa Ribeiro, Omar Todd, Charles Jones, Avinash Kori, Raghav Mehta, Ben Glocker\
 Imperial College London
 
+![ani_LIDC](assets/lidc.gif)
+![ani_REFUGE](assets/refuge.gif)
+
+
 ### Abstract
 
 We introduce the Flow Stochastic Segmentation Network(Flow-SSN), a generative segmentation model family featuring discrete-time autoregressive and modern continuous-time flow variants. We prove fundamental limitations of the low-rank parameterisation of previous methods and show that Flow-SSNs can estimate arbitrarily high-rank pixel-wise covariances without assuming the rank or storing the distributional parameters. Flow-SSNs are also more efficient to sample from than standard diffusion-based segmentation models, thanks to most of the model capacity being allocated to learning the base distribution of the flow, constituting an expressive prior. We apply Flow-SSNs to challenging medical imaging benchmarks and achieve state-of-the-art results.
