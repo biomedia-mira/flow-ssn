@@ -14,7 +14,7 @@ Imperial College London
 
 ### Abstract
 
-We introduce the Flow Stochastic Segmentation Network(Flow-SSN), a generative segmentation model family featuring discrete-time autoregressive and modern continuous-time flow variants. We prove fundamental limitations of the low-rank parameterisation of previous methods and show that Flow-SSNs can estimate arbitrarily high-rank pixel-wise covariances without assuming the rank or storing the distributional parameters. Flow-SSNs are also more efficient to sample from than standard diffusion-based segmentation models, thanks to most of the model capacity being allocated to learning the base distribution of the flow, constituting an expressive prior. We apply Flow-SSNs to challenging medical imaging benchmarks and achieve state-of-the-art results.
+We introduce the Flow Stochastic Segmentation Network (Flow-SSN), a generative segmentation model family featuring discrete-time autoregressive and modern continuous-time flow variants. We prove fundamental limitations of the low-rank parameterisation of previous methods and show that Flow-SSNs can estimate arbitrarily high-rank pixel-wise covariances without assuming the rank or storing the distributional parameters. Flow-SSNs are also more efficient to sample from than standard diffusion-based segmentation models, thanks to most of the model capacity being allocated to learning the base distribution of the flow, constituting an expressive prior. We apply Flow-SSNs to challenging medical imaging benchmarks and achieve state-of-the-art results.
 
 ### TLDR
  - A flow's prior is typically fixed (e.g. $$N(0, I)$$). We learn it and use a **lightweight** flow to model pixel dependencies;
@@ -67,8 +67,7 @@ REFUGE-MultiRater:
 
 ### Data
 
-For **LIDC-IDRI**, we follow [PHiSeg](https://github.com/baumgach/PHiSeg-code) and download [Stefan Knegt's pickle file](https://drive.google.com/drive/folders/1xKfKCQo8qa6SAr3u7qWNtQjIphIrvmd5), then run `datasets/lidc.py` to generate the .hdf5 dataset file.
-The **REFUGE-MultiRater** dataset is available for [download on huggingface](https://huggingface.co/datasets/realslimman/REFUGE-MultiRater).
+For **LIDC-IDRI**, we follow [PHiSeg](https://github.com/baumgach/PHiSeg-code) and download [Stefan Knegt's pickle file](https://drive.google.com/drive/folders/1xKfKCQo8qa6SAr3u7qWNtQjIphIrvmd5), then run `datasets/lidc.py` to generate the .hdf5 dataset file. The **REFUGE-MultiRater** dataset is available for [download on huggingface](https://huggingface.co/datasets/realslimman/REFUGE-MultiRater).
 
 ### Training your own model
 
